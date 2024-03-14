@@ -41,7 +41,7 @@ public class CiaItson extends javax.swing.JFrame {
                 TxtIdActionPerformed(evt);
             }
         });
-        getContentPane().add(TxtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, -1, -1));
+        getContentPane().add(TxtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 220, -1));
 
         TxtPass.setText("Ingresa contraseña");
         TxtPass.addActionListener(new java.awt.event.ActionListener() {
@@ -49,7 +49,7 @@ public class CiaItson extends javax.swing.JFrame {
                 TxtPassActionPerformed(evt);
             }
         });
-        getContentPane().add(TxtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 140, -1));
+        getContentPane().add(TxtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 220, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 3, 36)); // NOI18N
         jLabel2.setText("CIA ITSON");
