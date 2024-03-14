@@ -6,7 +6,7 @@ package Interfaz;
 
 /**
  *
- * @author crazy
+ * @author Linda-Ruben-Max-David
  */
 public class FrmCrearEvento extends javax.swing.JFrame {
 

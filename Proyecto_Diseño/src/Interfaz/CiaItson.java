@@ -6,7 +6,7 @@ package Interfaz;
 
 /**
  *
- * @author alejandrobel
+ * @author Linda-Ruben-Max-David
  */
 public class CiaItson extends javax.swing.JFrame {
 

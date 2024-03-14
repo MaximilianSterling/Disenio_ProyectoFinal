@@ -3,7 +3,7 @@ package Interfaz;
 
 /**
  *
- * @author alejandrobel
+ * @author Linda-Ruben-Max-David
  */
 public class Inicio extends javax.swing.JFrame {
 
