@@ -26,31 +26,60 @@ public class CiaItson extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        BtnAceptar = new javax.swing.JButton();
+        TxtId = new javax.swing.JTextField();
+        TxtPass = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        BtnInicioSesion = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        BtnAceptar.setText("aceptar");
+        TxtId.setText("Ingresa ID de 11 digitos");
+        TxtId.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TxtIdActionPerformed(evt);
+            }
+        });
+        getContentPane().add(TxtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(182, Short.MAX_VALUE)
-                .addComponent(BtnAceptar)
-                .addGap(165, 165, 165))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(232, Short.MAX_VALUE)
-                .addComponent(BtnAceptar)
-                .addGap(44, 44, 44))
-        );
+        TxtPass.setText("Ingresa contraseña");
+        TxtPass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TxtPassActionPerformed(evt);
+            }
+        });
+        getContentPane().add(TxtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 140, -1));
+
+        jLabel2.setFont(new java.awt.Font("Arial Black", 3, 36)); // NOI18N
+        jLabel2.setText("CIA ITSON");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 230, -1));
+
+        BtnInicioSesion.setText("Iniciar Sesión");
+        BtnInicioSesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnInicioSesionActionPerformed(evt);
+            }
+        });
+        getContentPane().add(BtnInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void TxtIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtIdActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtIdActionPerformed
+
+    private void TxtPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TxtPassActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TxtPassActionPerformed
+
+    private void BtnInicioSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInicioSesionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnInicioSesionActionPerformed
 
     /**
      * @param args the command line arguments
@@ -88,6 +117,10 @@ public class CiaItson extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BtnAceptar;
+    private javax.swing.JButton BtnInicioSesion;
+    private javax.swing.JTextField TxtId;
+    private javax.swing.JTextField TxtPass;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
