@@ -6,7 +6,7 @@ package Interfaz;
 
 /**
  *
- * @author crazy
+ * @author Linda-Ruben-Max-David
  */
 public class FrmVisualizarEvento extends javax.swing.JFrame {
 

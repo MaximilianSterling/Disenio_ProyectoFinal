@@ -1,5 +1,6 @@
 package proyecto_diseño;
 import Interfaz.Inicio;
+
 /**
  *
  * @author Linda-Ruben-Max-David

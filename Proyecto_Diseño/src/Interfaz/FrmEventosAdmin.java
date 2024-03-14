@@ -6,7 +6,7 @@ package Interfaz;
 
 /**
  *
- * @author cocob
+ * @author Linda-Ruben-Max-David
  */
 public class FrmEventosAdmin extends javax.swing.JFrame {
 
