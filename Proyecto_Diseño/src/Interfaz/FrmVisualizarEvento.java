@@ -155,6 +155,10 @@ public class FrmVisualizarEvento extends javax.swing.JFrame {
 
     private void botonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSalirActionPerformed
         // TODO add your handling code here:
+        FrmEventosUsuario f = new FrmEventosUsuario();
+        f.setVisible(true);
+        this.setVisible(false);
+        this.dispose();
     }//GEN-LAST:event_botonSalirActionPerformed
 
     private void campoTextoHorasCultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoTextoHorasCultActionPerformed

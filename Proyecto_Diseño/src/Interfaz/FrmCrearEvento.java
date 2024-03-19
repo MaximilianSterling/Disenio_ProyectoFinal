@@ -80,6 +80,11 @@ public class FrmCrearEvento extends javax.swing.JFrame {
         });
 
         botonCancelar.setText("Cancelar");
+        botonCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonCancelarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -161,6 +166,14 @@ public class FrmCrearEvento extends javax.swing.JFrame {
     private void campoTextoHorasCultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoTextoHorasCultActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_campoTextoHorasCultActionPerformed
+
+    private void botonCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCancelarActionPerformed
+        // TODO add your handling code here:
+        FrmEventosAdmin f = new FrmEventosAdmin();
+        f.setVisible(true);
+        this.setVisible(false);
+        this.dispose();
+    }//GEN-LAST:event_botonCancelarActionPerformed
 
     /**
      * @param args the command line arguments
