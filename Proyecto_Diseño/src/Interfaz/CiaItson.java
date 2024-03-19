@@ -78,7 +78,10 @@ public class CiaItson extends javax.swing.JFrame {
     }//GEN-LAST:event_TxtPassActionPerformed
 
     private void BtnInicioSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnInicioSesionActionPerformed
-        // TODO add your handling code here:
+        FrmEventosAdmin f = new FrmEventosAdmin();
+        f.setVisible(true);
+        this.setVisible(false);
+        this.dispose();
     }//GEN-LAST:event_BtnInicioSesionActionPerformed
 
     /**

@@ -76,7 +76,7 @@ public class FrmEventosAdmin extends javax.swing.JFrame {
         getContentPane().add(BtnCerrarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 90, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, 370));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 370));
 
         pack();
         setLocationRelativeTo(null);
