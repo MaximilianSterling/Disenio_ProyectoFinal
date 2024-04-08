@@ -27,53 +27,39 @@ public class FrmPerfilAdmin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblNombre = new javax.swing.JTextField();
+        lblID = new javax.swing.JTextField();
         btnSalir = new javax.swing.JButton();
-        lblNombre = new javax.swing.JLabel();
-        lblID = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 160, -1));
 
-        btnSalir.setText("Salir");
-        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+        lblID.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSalirActionPerformed(evt);
+                lblIDActionPerformed(evt);
             }
         });
+        getContentPane().add(lblID, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 160, -1));
 
-        lblNombre.setText("Nombre");
+        btnSalir.setText("Salir");
+        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, -1, -1));
 
-        lblID.setText("ID");
+        jLabel2.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
+        jLabel2.setText("Perfil Administardor");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblID, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnSalir))
-                .addContainerGap(287, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addComponent(lblNombre)
-                .addGap(63, 63, 63)
-                .addComponent(lblID)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
-                .addComponent(btnSalir)
-                .addGap(56, 56, 56))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+    private void lblIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblIDActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSalirActionPerformed
+    }//GEN-LAST:event_lblIDActionPerformed
 
     /**
      * @param args the command line arguments
@@ -112,7 +98,9 @@ public class FrmPerfilAdmin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSalir;
-    private javax.swing.JLabel lblID;
-    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JTextField lblID;
+    private javax.swing.JTextField lblNombre;
     // End of variables declaration//GEN-END:variables
 }

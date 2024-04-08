@@ -23,60 +23,68 @@
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
   </AuxValues>
 
-  <Layout>
-    <DimensionLayout dim="0">
-      <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="btnSalir" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblHorasIInterculturales" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblID" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
-                  <Component id="lblNombre" alignment="0" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="285" max="32767" attributes="0"/>
-          </Group>
-      </Group>
-    </DimensionLayout>
-    <DimensionLayout dim="1">
-      <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-              <Component id="lblNombre" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
-              <Component id="lblID" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="47" max="32767" attributes="0"/>
-              <Component id="lblHorasIInterculturales" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
-              <Component id="btnSalir" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-          </Group>
-      </Group>
-    </DimensionLayout>
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+    <Property name="useNullLayout" type="boolean" value="false"/>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="lblNombre">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Nombre"/>
-      </Properties>
+    <Component class="javax.swing.JTextField" name="lblNombre">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="lblNombreActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="20" y="80" width="180" height="-1"/>
+        </Constraint>
+      </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblHorasIInterculturales">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Horas Interculturales"/>
-      </Properties>
+    <Component class="javax.swing.JTextField" name="lblID">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="20" y="140" width="180" height="-1"/>
+        </Constraint>
+      </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="lblID">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="ID"/>
-      </Properties>
+    <Component class="javax.swing.JTextField" name="lblHorasCulturales">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="20" y="200" width="180" height="-1"/>
+        </Constraint>
+      </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="btnSalir">
       <Properties>
         <Property name="text" type="java.lang.String" value="Salir"/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSalirActionPerformed"/>
-      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="70" y="250" width="-1" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial Black" size="24" style="2"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Perfil Usuario"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="110" y="10" width="190" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/Imagenes/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="0" width="400" height="300"/>
+        </Constraint>
+      </Constraints>
     </Component>
   </SubComponents>
 </Form>

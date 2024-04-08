@@ -26,10 +26,12 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblNombre = new javax.swing.JLabel();
-        lblHorasIInterculturales = new javax.swing.JLabel();
-        lblID = new javax.swing.JLabel();
+        lblNombre = new javax.swing.JTextField();
+        lblID = new javax.swing.JTextField();
+        lblHorasCulturales = new javax.swing.JTextField();
         btnSalir = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addComponentListener(new java.awt.event.ComponentAdapter() {
@@ -37,46 +39,26 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
                 formComponentShown(evt);
             }
         });
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblNombre.setText("Nombre");
-
-        lblHorasIInterculturales.setText("Horas Interculturales");
-
-        lblID.setText("ID");
-
-        btnSalir.setText("Salir");
-        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+        lblNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSalirActionPerformed(evt);
+                lblNombreActionPerformed(evt);
             }
         });
+        getContentPane().add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 180, -1));
+        getContentPane().add(lblID, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 180, -1));
+        getContentPane().add(lblHorasCulturales, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 180, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnSalir)
-                    .addComponent(lblHorasIInterculturales)
-                    .addComponent(lblID, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblNombre))
-                .addContainerGap(285, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(55, 55, 55)
-                .addComponent(lblNombre)
-                .addGap(56, 56, 56)
-                .addComponent(lblID)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
-                .addComponent(lblHorasIInterculturales)
-                .addGap(41, 41, 41)
-                .addComponent(btnSalir)
-                .addGap(30, 30, 30))
-        );
+        btnSalir.setText("Salir");
+        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
+        jLabel2.setText("Perfil Usuario");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 190, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -85,9 +67,9 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_formComponentShown
 
-    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+    private void lblNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblNombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnSalirActionPerformed
+    }//GEN-LAST:event_lblNombreActionPerformed
 
     /**
      * @param args the command line arguments
@@ -126,8 +108,10 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSalir;
-    private javax.swing.JLabel lblHorasIInterculturales;
-    private javax.swing.JLabel lblID;
-    private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JTextField lblHorasCulturales;
+    private javax.swing.JTextField lblID;
+    private javax.swing.JTextField lblNombre;
     // End of variables declaration//GEN-END:variables
 }
