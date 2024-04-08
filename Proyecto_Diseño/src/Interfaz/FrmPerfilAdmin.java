@@ -27,25 +27,28 @@ public class FrmPerfilAdmin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblNombre = new javax.swing.JTextField();
-        lblID = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
+        txtId = new javax.swing.JTextField();
         btnSalir = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 90, 160, -1));
 
-        lblID.addActionListener(new java.awt.event.ActionListener() {
+        txtNombre.setText("Nombre");
+        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 190, -1));
+
+        txtId.setText("ID");
+        txtId.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lblIDActionPerformed(evt);
+                txtIdActionPerformed(evt);
             }
         });
-        getContentPane().add(lblID, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 160, -1));
+        getContentPane().add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, 190, -1));
 
         btnSalir.setText("Salir");
-        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 240, -1, -1));
+        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 80, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
         jLabel2.setText("Perfil Administardor");
@@ -57,9 +60,9 @@ public class FrmPerfilAdmin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void lblIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblIDActionPerformed
+    private void txtIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_lblIDActionPerformed
+    }//GEN-LAST:event_txtIdActionPerformed
 
     /**
      * @param args the command line arguments
@@ -100,7 +103,7 @@ public class FrmPerfilAdmin extends javax.swing.JFrame {
     private javax.swing.JButton btnSalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField lblID;
-    private javax.swing.JTextField lblNombre;
+    private javax.swing.JTextField txtId;
+    private javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
 }

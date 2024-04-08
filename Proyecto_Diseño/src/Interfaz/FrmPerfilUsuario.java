@@ -26,9 +26,9 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblNombre = new javax.swing.JTextField();
-        lblID = new javax.swing.JTextField();
-        lblHorasCulturales = new javax.swing.JTextField();
+        txtNombre = new javax.swing.JTextField();
+        txtId = new javax.swing.JTextField();
+        txtHoras = new javax.swing.JTextField();
         btnSalir = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -41,17 +41,22 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblNombre.addActionListener(new java.awt.event.ActionListener() {
+        txtNombre.setText("Nombre");
+        txtNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                lblNombreActionPerformed(evt);
+                txtNombreActionPerformed(evt);
             }
         });
-        getContentPane().add(lblNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 180, -1));
-        getContentPane().add(lblID, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 180, -1));
-        getContentPane().add(lblHorasCulturales, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 180, -1));
+        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 80, 180, -1));
+
+        txtId.setText("ID");
+        getContentPane().add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 180, -1));
+
+        txtHoras.setText("hrs acumuladas");
+        getContentPane().add(txtHoras, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 180, -1));
 
         btnSalir.setText("Salir");
-        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, -1, -1));
+        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 250, 60, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
         jLabel2.setText("Perfil Usuario");
@@ -67,9 +72,9 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_formComponentShown
 
-    private void lblNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lblNombreActionPerformed
+    private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_lblNombreActionPerformed
+    }//GEN-LAST:event_txtNombreActionPerformed
 
     /**
      * @param args the command line arguments
@@ -110,8 +115,8 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
     private javax.swing.JButton btnSalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField lblHorasCulturales;
-    private javax.swing.JTextField lblID;
-    private javax.swing.JTextField lblNombre;
+    private javax.swing.JTextField txtHoras;
+    private javax.swing.JTextField txtId;
+    private javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
 }
