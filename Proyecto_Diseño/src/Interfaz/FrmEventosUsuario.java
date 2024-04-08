@@ -51,6 +51,11 @@ public class FrmEventosUsuario extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 460, 310));
 
         BtnPerfil.setText("Perfil");
+        BtnPerfil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnPerfilActionPerformed(evt);
+            }
+        });
         getContentPane().add(BtnPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 70, 40));
 
         BtnCerrarSesion.setText("Cerrar Sesión");
@@ -75,6 +80,15 @@ public class FrmEventosUsuario extends javax.swing.JFrame {
         this.setVisible(false);
         this.dispose();
     }//GEN-LAST:event_BtnCerrarSesionActionPerformed
+
+    private void BtnPerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPerfilActionPerformed
+        FrmPerfilUsuario f = new FrmPerfilUsuario();
+        f.setVisible(true);
+        
+        this.setVisible(false);
+        this.dispose();
+        
+    }//GEN-LAST:event_BtnPerfilActionPerformed
 
     /**
      * @param args the command line arguments

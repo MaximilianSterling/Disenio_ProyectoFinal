@@ -48,6 +48,11 @@ public class FrmPerfilAdmin extends javax.swing.JFrame {
         getContentPane().add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, 190, -1));
 
         btnSalir.setText("Salir");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 80, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
@@ -63,6 +68,14 @@ public class FrmPerfilAdmin extends javax.swing.JFrame {
     private void txtIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtIdActionPerformed
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        FrmEventosAdmin f = new FrmEventosAdmin();
+        f.setVisible(true);
+        
+        this.setVisible(false);
+        this.dispose();
+    }//GEN-LAST:event_btnSalirActionPerformed
 
     /**
      * @param args the command line arguments

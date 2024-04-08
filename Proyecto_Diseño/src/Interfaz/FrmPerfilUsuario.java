@@ -6,7 +6,7 @@ package Interfaz;
 
 /**
  *
- * @author Maximiliano Reyna Aguilar
+ * @author Linda-Ruben-Max-David
  */
 public class FrmPerfilUsuario extends javax.swing.JFrame {
 
@@ -56,6 +56,11 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
         getContentPane().add(txtHoras, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 180, -1));
 
         btnSalir.setText("Salir");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 250, 60, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
@@ -75,6 +80,14 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
     private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNombreActionPerformed
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        FrmEventosUsuario f = new FrmEventosUsuario();
+        f.setVisible(true);
+        
+        this.setVisible(false);
+        this.dispose();
+    }//GEN-LAST:event_btnSalirActionPerformed
 
     /**
      * @param args the command line arguments

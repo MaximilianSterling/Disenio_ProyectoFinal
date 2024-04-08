@@ -83,7 +83,11 @@ public class FrmEventosAdmin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnPerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPerfilActionPerformed
-        // TODO add your handling code here:
+        FrmPerfilAdmin f = new FrmPerfilAdmin();
+        f.setVisible(true);
+        
+        this.setVisible(false);
+        this.dispose();
     }//GEN-LAST:event_BtnPerfilActionPerformed
 
     private void BtnCrearEventoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCrearEventoActionPerformed
