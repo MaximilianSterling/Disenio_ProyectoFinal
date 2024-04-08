@@ -6,7 +6,7 @@ package Interfaz;
 
 /**
  *
- * @author Maximiliano
+ * @author Maximiliano Reyna Aguilar
  */
 public class FrmPerfilUsuario extends javax.swing.JFrame {
 
@@ -26,21 +26,68 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblNombre = new javax.swing.JLabel();
+        lblHorasIInterculturales = new javax.swing.JLabel();
+        lblID = new javax.swing.JLabel();
+        btnSalir = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                formComponentShown(evt);
+            }
+        });
+
+        lblNombre.setText("Nombre");
+
+        lblHorasIInterculturales.setText("Horas Interculturales");
+
+        lblID.setText("ID");
+
+        btnSalir.setText("Salir");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnSalir)
+                    .addComponent(lblHorasIInterculturales)
+                    .addComponent(lblID, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblNombre))
+                .addContainerGap(285, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(55, 55, 55)
+                .addComponent(lblNombre)
+                .addGap(56, 56, 56)
+                .addComponent(lblID)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addComponent(lblHorasIInterculturales)
+                .addGap(41, 41, 41)
+                .addComponent(btnSalir)
+                .addGap(30, 30, 30))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
+        // TODO add your handling code here:
+    }//GEN-LAST:event_formComponentShown
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +125,9 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnSalir;
+    private javax.swing.JLabel lblHorasIInterculturales;
+    private javax.swing.JLabel lblID;
+    private javax.swing.JLabel lblNombre;
     // End of variables declaration//GEN-END:variables
 }
