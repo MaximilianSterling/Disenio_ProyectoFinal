@@ -8,12 +8,12 @@ package Interfaz;
  *
  * @author Linda-Ruben-Max-David
  */
-public class FrmEventosAdmin extends javax.swing.JFrame {
+public class FrmEventosUsuario extends javax.swing.JFrame {
 
     /**
-     * Creates new form FrmEventosUsuario
+     * Creates new form FrmEventosAdmin
      */
-    public FrmEventosAdmin() {
+    public FrmEventosUsuario() {
         initComponents();
     }
 
@@ -28,7 +28,6 @@ public class FrmEventosAdmin extends javax.swing.JFrame {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        BtnCrearEvento = new javax.swing.JButton();
         BtnPerfil = new javax.swing.JButton();
         BtnCerrarSesion = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -49,15 +48,7 @@ public class FrmEventosAdmin extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 460, 310));
-
-        BtnCrearEvento.setText("Crear Evento");
-        BtnCrearEvento.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnCrearEventoActionPerformed(evt);
-            }
-        });
-        getContentPane().add(BtnCrearEvento, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 90, 40));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 460, 310));
 
         BtnPerfil.setText("Perfil");
         BtnPerfil.addActionListener(new java.awt.event.ActionListener() {
@@ -65,7 +56,7 @@ public class FrmEventosAdmin extends javax.swing.JFrame {
                 BtnPerfilActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 90, 40));
+        getContentPane().add(BtnPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 70, 40));
 
         BtnCerrarSesion.setText("Cerrar Sesión");
         BtnCerrarSesion.addActionListener(new java.awt.event.ActionListener() {
@@ -73,38 +64,31 @@ public class FrmEventosAdmin extends javax.swing.JFrame {
                 BtnCerrarSesionActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnCerrarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 90, 40));
+        getContentPane().add(BtnCerrarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 10, 100, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 370));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 390));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BtnPerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPerfilActionPerformed
-        FrmPerfilAdmin f = new FrmPerfilAdmin();
+    private void BtnCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCerrarSesionActionPerformed
+        Inicio f = new Inicio();
         f.setVisible(true);
         
         this.setVisible(false);
         this.dispose();
-    }//GEN-LAST:event_BtnPerfilActionPerformed
-
-    private void BtnCrearEventoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCrearEventoActionPerformed
-       FrmCrearEvento f = new FrmCrearEvento();
-       
-       f.setVisible(true);
-       
-       this.setVisible(false);
-       this.dispose();
-    }//GEN-LAST:event_BtnCrearEventoActionPerformed
-
-    private void BtnCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCerrarSesionActionPerformed
-       Inicio f = new Inicio();
-       f.setVisible(true);
-       this.setVisible(false);
-       this.dispose();
     }//GEN-LAST:event_BtnCerrarSesionActionPerformed
+
+    private void BtnPerfilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPerfilActionPerformed
+        FrmPerfilUsuario f = new FrmPerfilUsuario();
+        f.setVisible(true);
+        
+        this.setVisible(false);
+        this.dispose();
+        
+    }//GEN-LAST:event_BtnPerfilActionPerformed
 
     /**
      * @param args the command line arguments
@@ -123,28 +107,33 @@ public class FrmEventosAdmin extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmEventosAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmEventosUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmEventosAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmEventosUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmEventosAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmEventosUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmEventosAdmin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmEventosUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FrmEventosAdmin().setVisible(true);
+                new FrmEventosUsuario().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnCerrarSesion;
-    private javax.swing.JButton BtnCrearEvento;
     private javax.swing.JButton BtnPerfil;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
