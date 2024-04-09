@@ -29,7 +29,6 @@ public class CiaItson extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         TxtId.setText("Ingresa ID de 11 digitos");
         TxtId.addActionListener(new java.awt.event.ActionListener() {
@@ -37,7 +36,6 @@ public class CiaItson extends javax.swing.JFrame {
                 TxtIdActionPerformed(evt);
             }
         });
-        getContentPane().add(TxtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 220, -1));
 
         TxtPass.setText("Ingresa contraseña");
         TxtPass.addActionListener(new java.awt.event.ActionListener() {
@@ -45,11 +43,9 @@ public class CiaItson extends javax.swing.JFrame {
                 TxtPassActionPerformed(evt);
             }
         });
-        getContentPane().add(TxtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 220, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 3, 36)); // NOI18N
         jLabel2.setText("CIA ITSON");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 230, -1));
 
         BtnInicioSesion.setText("Iniciar Sesión");
         BtnInicioSesion.addActionListener(new java.awt.event.ActionListener() {
@@ -57,10 +53,38 @@ public class CiaItson extends javax.swing.JFrame {
                 BtnInicioSesionActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 300));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(TxtId, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(TxtPass, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(160, 160, 160)
+                .addComponent(BtnInicioSesion))
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel2)
+                .addGap(48, 48, 48)
+                .addComponent(TxtId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17)
+                .addComponent(TxtPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(57, 57, 57)
+                .addComponent(BtnInicioSesion))
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         pack();
         setLocationRelativeTo(null);

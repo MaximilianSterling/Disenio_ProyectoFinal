@@ -25,13 +25,10 @@ public class Inicio extends javax.swing.JFrame {
 
         BtnCia = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         BtnCia.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
-        BtnCia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/user_12274982 (1).png"))); // NOI18N
         BtnCia.setText("CIA ITSON");
         BtnCia.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         BtnCia.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -40,14 +37,33 @@ public class Inicio extends javax.swing.JFrame {
                 BtnCiaActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnCia, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 2, 36)); // NOI18N
         jLabel2.setText("Cultura itson");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 40, 290, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 415, 330));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(70, 70, 70)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(130, 130, 130)
+                        .addComponent(BtnCia)))
+                .addGap(55, 55, 55))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jLabel2)
+                .addGap(68, 68, 68)
+                .addComponent(BtnCia)
+                .addGap(138, 138, 138))
+        );
 
         pack();
         setLocationRelativeTo(null);
@@ -99,7 +115,6 @@ public class Inicio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnCia;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
