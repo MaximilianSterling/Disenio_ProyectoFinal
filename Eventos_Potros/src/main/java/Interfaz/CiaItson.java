@@ -54,6 +54,8 @@ public class CiaItson extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/proyecto  Diseño/Disenio_proyecto/Eventos_Potros/src/main/java/other sourse/imagenes/engin-akyurt-BawjznQ3Q8U-unsplash.jpg")); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(

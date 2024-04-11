@@ -120,6 +120,11 @@
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Dise&#xf1;o de software/proyecto  Dise&#xf1;o/Disenio_proyecto/Eventos_Potros/src/main/java/other sourse/imagenes/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"/>
+        </Property>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
