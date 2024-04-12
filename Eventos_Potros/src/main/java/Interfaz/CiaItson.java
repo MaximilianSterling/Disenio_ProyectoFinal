@@ -29,6 +29,7 @@ public class CiaItson extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("CIA ITSON");
 
         TxtId.setText("Ingresa ID de 11 digitos");
         TxtId.addActionListener(new java.awt.event.ActionListener() {

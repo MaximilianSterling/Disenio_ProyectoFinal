@@ -33,6 +33,7 @@ public class FrmPerfilAdmin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Perfil");
 
         txtNombre.setText("Nombre");
 

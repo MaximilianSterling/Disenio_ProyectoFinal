@@ -42,6 +42,7 @@ public class FrmVisualizarEvento extends javax.swing.JFrame {
         campoTextoHorasCult = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Visualizar ");
 
         jLabel1.setText("Evento:");
 

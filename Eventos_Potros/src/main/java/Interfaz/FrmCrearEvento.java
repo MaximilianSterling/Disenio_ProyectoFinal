@@ -43,6 +43,8 @@ public class FrmCrearEvento extends javax.swing.JFrame {
         botonCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Crear evento");
+        setBackground(new java.awt.Color(0, 102, 255));
 
         jLabel1.setText("Evento:");
 

@@ -27,6 +27,7 @@ public class Inicio extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Inicio");
 
         BtnCia.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
         BtnCia.setText("CIA ITSON");

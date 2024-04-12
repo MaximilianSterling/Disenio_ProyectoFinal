@@ -33,6 +33,7 @@ public class FrmEventosUsuario extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Evento");
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
