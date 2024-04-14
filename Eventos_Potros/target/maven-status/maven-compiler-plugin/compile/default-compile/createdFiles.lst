@@ -1,2 +1,4 @@
-DAO/UsuariosDAO.class
-DAO/EventosDAO.class
+DAO\EventosDAO.class
+DAO\UsuariosDAO.class
+entidades\evento.class
+entidades\usuario.class
