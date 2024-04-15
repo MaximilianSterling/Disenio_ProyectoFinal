@@ -35,11 +35,11 @@ public class UsuariosDAO {
         UsuariosDAO udao = new UsuariosDAO();
         usuario us = new usuario();
         
-        us.setNombre("alejandro");
-        us.setPass("12345678");
-        us.setIdentificador(0);
-        us.setIdCIA("216100");
-        us.setHoras(12);
+        us.setNombre("Linda");
+        us.setPass("98765432");
+        us.setIdentificador(1);
+        us.setIdCIA("216690");
+        us.setHoras(45);
         udao.insertarUsuario(us);
     }
 }
