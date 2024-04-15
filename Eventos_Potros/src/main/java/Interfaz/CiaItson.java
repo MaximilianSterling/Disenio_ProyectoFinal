@@ -55,7 +55,7 @@ public class CiaItson extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/other sourse/imagenes/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Maximiliano\\Documents\\Proyectos Git Hub\\Disenio_proyecto\\Disenio_proyecto\\Eventos_Potros\\src\\main\\java\\other sourse\\imagenes\\engin-akyurt-BawjznQ3Q8U-unsplash.jpg")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

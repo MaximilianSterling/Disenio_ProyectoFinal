@@ -1,2 +1,3 @@
-DAO/UsuariosDAO.class
-DAO/EventosDAO.class
+Interfaz\FrmPerfilUsuario$5.class
+DAO\EventosDAO.class
+DAO\UsuariosDAO.class
