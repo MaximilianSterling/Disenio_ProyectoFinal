@@ -1,4 +1,8 @@
 DAO\EventosDAO.class
+negocio\Usuarios.class
+entidades\usuario_.class
+entidades\evento_.class
 DAO\UsuariosDAO.class
 entidades\evento.class
+negocio\Eventos.class
 entidades\usuario.class

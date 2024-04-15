@@ -17,7 +17,7 @@ public class usuario {
 
     @Id //Identificacion del id
     @Column(name = "idUsuario") //Identificacion de la columna
-    @GeneratedValue(strategy = GenerationType.AUTO) //Identifica que la variable es autoincrementable
+    @GeneratedValue(strategy = GenerationType.SEQUENCE) //Identifica que la variable es autoincrementable
 
     private int idUsuario;
     @Column(name = "nombre")
