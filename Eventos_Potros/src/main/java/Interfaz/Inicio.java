@@ -25,13 +25,18 @@ public class Inicio extends javax.swing.JFrame {
 
         BtnCia = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+<<<<<<< HEAD
         jPanel1 = new javax.swing.JPanel();
+=======
+>>>>>>> ac475a4f13aefd9657fc3170400c3bba7031982e
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Inicio");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         BtnCia.setFont(new java.awt.Font("Arial Black", 1, 18)); // NOI18N
+        BtnCia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/user_12274982 (1).png"))); // NOI18N
         BtnCia.setText("CIA ITSON");
         BtnCia.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         BtnCia.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
@@ -40,10 +45,13 @@ public class Inicio extends javax.swing.JFrame {
                 BtnCiaActionPerformed(evt);
             }
         });
+        getContentPane().add(BtnCia, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 2, 36)); // NOI18N
         jLabel2.setText("Cultura itson");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 290, -1));
 
+<<<<<<< HEAD
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Maximiliano\\Documents\\Proyectos Git Hub\\Disenio_proyecto\\Disenio_proyecto\\Eventos_Potros\\src\\main\\java\\other sourse\\imagenes\\engin-akyurt-BawjznQ3Q8U-unsplash.jpg")); // NOI18N
@@ -76,6 +84,10 @@ public class Inicio extends javax.swing.JFrame {
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+=======
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 350));
+>>>>>>> ac475a4f13aefd9657fc3170400c3bba7031982e
 
         pack();
         setLocationRelativeTo(null);

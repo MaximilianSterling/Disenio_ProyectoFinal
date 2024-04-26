@@ -32,9 +32,11 @@ public class FrmEventosAdmin extends javax.swing.JFrame {
         BtnPerfil = new javax.swing.JButton();
         BtnCerrarSesion = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Evento");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -49,12 +51,15 @@ public class FrmEventosAdmin extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 460, 310));
+
         BtnCrearEvento.setText("Crear Evento");
         BtnCrearEvento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnCrearEventoActionPerformed(evt);
             }
         });
+        getContentPane().add(BtnCrearEvento, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 90, 40));
 
         BtnPerfil.setText("Perfil");
         BtnPerfil.addActionListener(new java.awt.event.ActionListener() {
@@ -62,6 +67,7 @@ public class FrmEventosAdmin extends javax.swing.JFrame {
                 BtnPerfilActionPerformed(evt);
             }
         });
+        getContentPane().add(BtnPerfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 90, 40));
 
         BtnCerrarSesion.setText("Cerrar Sesión");
         BtnCerrarSesion.addActionListener(new java.awt.event.ActionListener() {
@@ -69,35 +75,11 @@ public class FrmEventosAdmin extends javax.swing.JFrame {
                 BtnCerrarSesionActionPerformed(evt);
             }
         });
+        getContentPane().add(BtnCerrarSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 90, 40));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 370));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/proyecto  Diseño/Disenio_proyecto/Eventos_Potros/src/main/java/other sourse/imagenes/engin-akyurt-BawjznQ3Q8U-unsplash.jpg")); // NOI18N
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(200, 200, 200)
-                .addComponent(BtnCerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(BtnCrearEvento, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(100, 100, 100)
-                .addComponent(BtnPerfil, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(BtnCerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(BtnCrearEvento, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(BtnPerfil, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 370));
 
         pack();
         setLocationRelativeTo(null);
@@ -170,6 +152,7 @@ public class FrmEventosAdmin extends javax.swing.JFrame {
     private javax.swing.JButton BtnCrearEvento;
     private javax.swing.JButton BtnPerfil;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables

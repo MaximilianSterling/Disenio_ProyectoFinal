@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Maximiliano\Documents\Proyectos Git Hub\Disenio_proyecto\Disenio_proyecto\Eventos_Potros\src\main\java\Interfaz\CiaItson.java
 C:\Users\Maximiliano\Documents\Proyectos Git Hub\Disenio_proyecto\Disenio_proyecto\Eventos_Potros\src\main\java\Interfaz\Inicio.java
 C:\Users\Maximiliano\Documents\Proyectos Git Hub\Disenio_proyecto\Disenio_proyecto\Eventos_Potros\src\main\java\Interfaz\FrmPerfilAdmin.java
@@ -10,3 +11,21 @@ C:\Users\Maximiliano\Documents\Proyectos Git Hub\Disenio_proyecto\Disenio_proyec
 C:\Users\Maximiliano\Documents\Proyectos Git Hub\Disenio_proyecto\Disenio_proyecto\Eventos_Potros\src\main\java\DAO\UsuariosDAO.java
 C:\Users\Maximiliano\Documents\Proyectos Git Hub\Disenio_proyecto\Disenio_proyecto\Eventos_Potros\src\main\java\Interfaz\FrmEventosAdmin.java
 C:\Users\Maximiliano\Documents\Proyectos Git Hub\Disenio_proyecto\Disenio_proyecto\Eventos_Potros\src\main\java\Interfaz\FrmVisualizarEvento.java
+=======
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/entidades/usuario.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/Interfaz/Inicio.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/Interfaz/CiaItson.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/negocio/Usuarios.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/mx/itson/eventos_potros/Eventos_Potros.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/entidades/evento.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/Interfaz/FrmEventosUsuario.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/DAO/UsuariosDAO.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/Interfaz/FrmVisualizarEvento.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/Interfaz/FrmPerfilAdmin.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/Interfaz/FrmEventosAdmin.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/Interfaz/FrmCrearEvento.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/DAO/EventosDAO.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/ConexionMySQL/conexionMySQL.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/Interfaz/FrmPerfilUsuario.java
+/Users/alejandrobel/Desktop/ISW/Enero-Mayo 2024/Diseño de software/Proyecto final/Disenio_proyecto/Eventos_Potros/src/main/java/negocio/Eventos.java
+>>>>>>> ac475a4f13aefd9657fc3170400c3bba7031982e

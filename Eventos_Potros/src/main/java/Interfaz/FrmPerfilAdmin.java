@@ -36,8 +36,10 @@ public class FrmPerfilAdmin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Perfil");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtNombre.setText("Nombre");
+        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 190, -1));
 
         txtId.setText("ID");
         txtId.addActionListener(new java.awt.event.ActionListener() {
@@ -45,6 +47,7 @@ public class FrmPerfilAdmin extends javax.swing.JFrame {
                 txtIdActionPerformed(evt);
             }
         });
+        getContentPane().add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, 190, -1));
 
         btnSalir.setText("Salir");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -52,11 +55,13 @@ public class FrmPerfilAdmin extends javax.swing.JFrame {
                 btnSalirActionPerformed(evt);
             }
         });
+        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 230, 80, -1));
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
         jLabel2.setText("Perfil Administardor");
+<<<<<<< HEAD
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 15, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Maximiliano\\Documents\\Proyectos Git Hub\\Disenio_proyecto\\Disenio_proyecto\\Eventos_Potros\\src\\main\\java\\other sourse\\imagenes\\engin-akyurt-BawjznQ3Q8U-unsplash.jpg")); // NOI18N
@@ -98,6 +103,12 @@ public class FrmPerfilAdmin extends javax.swing.JFrame {
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+=======
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 15, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 370, 320));
+>>>>>>> ac475a4f13aefd9657fc3170400c3bba7031982e
 
         pack();
         setLocationRelativeTo(null);

@@ -30,6 +30,7 @@ public class CiaItson extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("CIA ITSON");
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         TxtId.setText("Ingresa ID de 11 digitos");
         TxtId.addActionListener(new java.awt.event.ActionListener() {
@@ -37,6 +38,7 @@ public class CiaItson extends javax.swing.JFrame {
                 TxtIdActionPerformed(evt);
             }
         });
+        getContentPane().add(TxtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 220, -1));
 
         TxtPass.setText("Ingresa contraseña");
         TxtPass.addActionListener(new java.awt.event.ActionListener() {
@@ -44,9 +46,11 @@ public class CiaItson extends javax.swing.JFrame {
                 TxtPassActionPerformed(evt);
             }
         });
+        getContentPane().add(TxtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 220, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 3, 36)); // NOI18N
         jLabel2.setText("CIA ITSON");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 230, -1));
 
         BtnInicioSesion.setText("Iniciar Sesión");
         BtnInicioSesion.addActionListener(new java.awt.event.ActionListener() {
@@ -54,7 +58,9 @@ public class CiaItson extends javax.swing.JFrame {
                 BtnInicioSesionActionPerformed(evt);
             }
         });
+        getContentPane().add(BtnInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, -1, -1));
 
+<<<<<<< HEAD
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Maximiliano\\Documents\\Proyectos Git Hub\\Disenio_proyecto\\Disenio_proyecto\\Eventos_Potros\\src\\main\\java\\other sourse\\imagenes\\engin-akyurt-BawjznQ3Q8U-unsplash.jpg")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -88,6 +94,10 @@ public class CiaItson extends javax.swing.JFrame {
                 .addComponent(BtnInicioSesion))
             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
+=======
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 420, 300));
+>>>>>>> ac475a4f13aefd9657fc3170400c3bba7031982e
 
         pack();
         setLocationRelativeTo(null);

@@ -1,33 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package ConexionMySQL;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 
 /**
  *
  * @author cocob
  */
 public class conexionMySQL {
-    private static Connection connection;
 
-    public static Connection getConnection() throws SQLException {
-        if (connection == null) {
-            String url = "jdbc:mysql://localhost:3306/eventos_potros";
-            String user = "root";
-            String password = "*****";
-            connection = DriverManager.getConnection(url, user, password);
-        }
-        return connection;
-    }
+    private static EntityManagerFactory emf = null;
 
-    public static void closeConnection() throws SQLException {
-        if (connection != null) {
-            connection.close();
+    public static EntityManager createEntityManager() {
+        try {
+            if (emf == null) {
+                emf = Persistence.createEntityManagerFactory("mx.itson_Eventos_Potros_jar_1.0PU");
+                System.out.println("conectado");
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
+        return emf.createEntityManager();
     }
 }

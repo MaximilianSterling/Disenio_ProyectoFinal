@@ -33,6 +33,7 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
         txtHoras = new javax.swing.JTextField();
         btnSalir = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Perfil");
@@ -42,6 +43,7 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
                 formComponentShown(evt);
             }
         });
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -54,15 +56,21 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
                 txtNombreActionPerformed(evt);
             }
         });
+        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 86, 180, -1));
 
         txtId.setText("ID");
+        getContentPane().add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 180, -1));
 
         txtHoras.setText("hrs acumuladas");
+<<<<<<< HEAD
         txtHoras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtHorasActionPerformed(evt);
             }
         });
+=======
+        getContentPane().add(txtHoras, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, 180, -1));
+>>>>>>> ac475a4f13aefd9657fc3170400c3bba7031982e
 
         btnSalir.setText("Salir");
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -70,10 +78,13 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
                 btnSalirActionPerformed(evt);
             }
         });
+        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(157, 250, 60, -1));
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
         jLabel2.setText("Perfil Usuario");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 190, -1));
 
+<<<<<<< HEAD
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -121,6 +132,10 @@ public class FrmPerfilUsuario extends javax.swing.JFrame {
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+=======
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/engin-akyurt-BawjznQ3Q8U-unsplash.jpg"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 300));
+>>>>>>> ac475a4f13aefd9657fc3170400c3bba7031982e
 
         pack();
         setLocationRelativeTo(null);
